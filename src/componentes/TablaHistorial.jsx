@@ -6,9 +6,9 @@ export function TablaHistorial() {
 
     const ObtenerLS = () => {
         let datosLS = localStorage.getItem("cotizaciones")    
-//console.log(datosLS)
+
         let historialCotizaciones = JSON.parse(datosLS)
- //       console.log(historialCotizaciones)
+ 
         if(datosLS){
             return JSON.parse(datosLS)
           }else{
@@ -18,32 +18,6 @@ export function TablaHistorial() {
 
 const [datosTabla, setDatosTabla] = useState(ObtenerLS())
 console.log(datosTabla)
-
-
-//let datosLS = localStorage.getItem("cotizaciones")
-//console.log(datos)
-
-//const tablaHistorial = document.querySelector("tbody")
-
-//const retornoTablaHTML = (fila)=> {
- //   return `<tr>
-//<td>'7/12'</td>
-//                <td>${fila.tipo}</td>
-//                <td>${fila.ubicacion}</td>
- //               <td>${fila.cantidad}</td>
-  //              <td>$ ${fila.total}</td>
- //           </tr>`
-//}
-
-//const cargoHistorial = ()=> {
- //   let tablaHTML = ""
-//if (historialCotizaciones.length > 0) {
- //       historialCotizaciones.forEach(fila => tablaHTML += retornoTablaHTML(fila));
-//        tablaHistorial.innerHTML = tablaHTML
-//    }
-//}
-
-
   
     return (
 

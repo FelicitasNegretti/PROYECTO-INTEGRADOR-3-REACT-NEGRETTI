@@ -8,18 +8,6 @@ const [persona, setPersona] = useState({
     email: ''
 })
 
-//const NombreIngresado = (e) => {
-//    setPersona ({...persona, nombre: e.target.value})
-//}
-
-//const ApellidoIngresado = (e) => {
-//    setPersona ({...persona, apellido: e.target.value})
-//}
-
-//const EmailIngresado = (e) => {
-//    setPersona ({...persona, email: e.target.value})
-//}
-
 const DatosIngresados = (e) => {
     setPersona ({...persona, [e.target.name]: e.target.value})
 }

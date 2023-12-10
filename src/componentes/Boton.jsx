@@ -6,9 +6,6 @@ export function Boton({cantidad, ubicacion, tipo, total, setTotal}) {
   const obtenerCotizaciones = () => {
     let datos = localStorage.getItem("cotizaciones")
     console.log(datos)
-  //  let historialCotizaciones = JSON.parse(datos)
-  //  console.log(historialCotizaciones)
-    //console.dir(historialCotizaciones)
 
    if(datos){
       return JSON.parse(datos)
